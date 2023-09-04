@@ -74,7 +74,7 @@ public class SubscriptionService {
 
         subscriptionRepository.save(subscription);
 
-        return 200; //null
+        return 400; //null
     }
 
     public Integer calculateTotalRevenueOfHotstar(){
