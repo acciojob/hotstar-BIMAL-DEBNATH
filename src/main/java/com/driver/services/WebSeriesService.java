@@ -37,7 +37,7 @@ public class WebSeriesService {
        double rating=productionHouse.getRatings();
 
         double tm=(double) ((rating*webSeriesList.size())+webSeriesEntryDto.getRating());
-       rating=tm/webSeriesList.size()+1;
+       rating=tm/(webSeriesList.size()+1);
        productionHouse.setRatings(rating);
 
        WebSeries webSeries=new WebSeries(webSeriesEntryDto.getSeriesName(), webSeriesEntryDto.getAgeLimit(),webSeriesEntryDto.getRating(),webSeriesEntryDto.getSubscriptionType());
