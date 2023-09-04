@@ -23,8 +23,8 @@ public class ProductionHouseController {
     public Integer addProductionHouseInfoIntoDb(@RequestBody ProductionHouseEntryDto productionHouseEntryDto){
 
         //Default ratings of the ProductionHouse should be 0
-        return productionHouseService.addProductionHouseToDb(productionHouseEntryDto);
-
+         productionHouseService.addProductionHouseToDb(productionHouseEntryDto);
+          return null;
     }
 
 }
