@@ -48,7 +48,7 @@ public class WebSeriesService {
 
        productionHouseRepository.save(productionHouse);
 
-        return null;
+        return webSeriesList.size()+1;
     }
 
 }
