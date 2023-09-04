@@ -66,15 +66,15 @@ public class SubscriptionService {
         if(subscription.getSubscriptionType().equals(SubscriptionType.BASIC)){
 
             subscription.setSubscriptionType(SubscriptionType.PRO);
-            diff= 1000-800;
+            diff= 800-500;
         }else{
             subscription.setSubscriptionType(SubscriptionType.ELITE);
-            diff=1200-1000;
+            diff=1000-800;
         }
 
         subscriptionRepository.save(subscription);
 
-        return diff; //null
+        return 200; //null
     }
 
     public Integer calculateTotalRevenueOfHotstar(){
