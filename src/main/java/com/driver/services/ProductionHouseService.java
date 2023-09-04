@@ -15,11 +15,11 @@ public class ProductionHouseService {
 
     public Integer addProductionHouseToDb(ProductionHouseEntryDto productionHouseEntryDto){
 
-        if(productionHouseEntryDto.getName()!=null) {
+       // if(productionHouseEntryDto.getName()!=null) {
             ProductionHouse productionHouse = new ProductionHouse(productionHouseEntryDto.getName());
-           productionHouse.setRatings(0);
+           productionHouse.setRatings(0.0);
             productionHouseRepository.save(productionHouse);
-        }
+       // }
         return  null;
     }
 
