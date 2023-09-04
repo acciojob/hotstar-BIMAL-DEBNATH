@@ -66,7 +66,7 @@ public class SubscriptionService {
         if(subscription.getSubscriptionType().equals(SubscriptionType.BASIC)){
 
             subscription.setSubscriptionType(SubscriptionType.PRO);
-            diff= 800-500;
+            diff= 1000-800;
         }else{
             subscription.setSubscriptionType(SubscriptionType.ELITE);
             diff=1200-1000;
