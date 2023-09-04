@@ -69,7 +69,7 @@ public class SubscriptionService {
             diff= 800-500;
         }else{
             subscription.setSubscriptionType(SubscriptionType.ELITE);
-            diff=1000-800;
+            diff=1200-1000;
         }
 
         subscriptionRepository.save(subscription);
