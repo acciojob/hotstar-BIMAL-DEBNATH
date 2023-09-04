@@ -33,9 +33,9 @@ public class SubscriptionService {
         if(subscriptionEntryDto.getSubscriptionType().equals(SubscriptionType.BASIC)){
             price=500;
         } else if(subscriptionEntryDto.getSubscriptionType().equals(SubscriptionType.PRO)){
-            price=800;
+            price=800+500;
         }else{
-            price=1000;
+            price=1000+800+500;
         }
 
         Subscription subscription=new Subscription(subscriptionEntryDto.getSubscriptionType(),subscriptionEntryDto.getNoOfScreensRequired(),new Date(),price);
